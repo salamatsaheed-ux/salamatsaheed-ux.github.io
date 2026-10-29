@@ -4,8 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salamat Saheed Togun | AI Portfolio</title>
+
+    <meta name="description" content="Portfolio of Salamat Saheed Togun, Women in AI Fellow exploring machine learning, data analysis, and practical AI solutions.">
+
+    <title>Salamat Saheed Togun | AI/ML Portfolio</title>
+
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f6f5f1;
@@ -17,7 +29,7 @@
         header {
             background-color: #315c48;
             color: white;
-            padding: 50px 20px;
+            padding: 55px 20px;
             text-align: center;
         }
 
@@ -26,10 +38,18 @@
             margin-bottom: 5px;
         }
 
+        header p {
+            max-width: 700px;
+            margin: 10px auto;
+        }
+
         nav {
             background-color: white;
             padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
         }
 
         nav a {
@@ -39,23 +59,38 @@
             font-weight: bold;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
         section {
-            max-width: 850px;
+            max-width: 900px;
             margin: 30px auto;
-            padding: 25px;
+            padding: 28px;
             background-color: white;
             border-radius: 8px;
         }
 
         h2 {
             color: #315c48;
+            margin-top: 0;
         }
 
         .project {
             border-left: 4px solid #315c48;
-            padding: 10px 20px;
-            margin: 20px 0;
+            padding: 15px 20px;
+            margin: 22px 0;
             background-color: #f6f5f1;
+            border-radius: 4px;
+        }
+
+        .project h3 {
+            color: #315c48;
+            margin-top: 0;
+        }
+
+        .project p {
+            margin-bottom: 18px;
         }
 
         .button {
@@ -65,12 +100,42 @@
             padding: 10px 18px;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #244635;
+        }
+
+        .skills-list {
+            padding-left: 22px;
+        }
+
+        #contact a:not(.button) {
+            color: #315c48;
+            font-weight: bold;
         }
 
         footer {
             text-align: center;
             padding: 25px;
             color: #686d64;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 22px;
+            }
         }
     </style>
 </head>
@@ -79,8 +144,12 @@
 
     <header>
         <h1>Salamat Saheed Togun</h1>
-        <p>AI| Machine Learning | Data Science</p>
-        <p> I am Salamat Saheed Togun, I am an AI and Data Science Fellow at Webfala, developing pratical skills in python, SQL, data analysis and Machine Learning to solving problems with data.</p>
+        <p><strong>AI/ML Fellow | Machine Learning | Data Analysis</strong></p>
+        <p>
+            I am a Women in AI Fellow (2026) developing practical skills
+            in Python, SQL, data analysis, and machine learning to solve
+            real-world problems with data.
+        </p>
     </header>
 
     <nav>
@@ -90,78 +159,177 @@
         <a href="#contact">Contact</a>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I'm Agriculture graduate transitioning into Artificial
-            Intelligence and Machine Learning. Through programming,
-            data analysis, and hands-on projects, I'm developing the
-            skills to turn data into useful insights and practical solutions.
-        </p>
-        <p>
-            I'm particularly interested in predictive analytics and
-            exploring how AI can help solve real-world problems,
-            including challenges in agriculture.
-        </p>
-    </section>
+    <main>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Scikit-learn</li>
-            <li>PyTorch</li>
-            <li>Data Analysis and Visualisation</li>
-            <li>Machine Learning Model Evaluation</li>
-        </ul>
-    </section>
+        <section id="about">
+            <h2>About Me</h2>
 
-    <section id="projects">
-        <h2>My Projects</h2>
-
-        <div class="project">
-            <h3>Breast Cancer Classification</h3>
             <p>
-                A machine learning project using classification
-                models to distinguish between benign and malignant
-                breast tumours.
+                Sometimes, the difference between a good decision and a
+                costly mistake lies in a detail most people overlook.
             </p>
-            <a class="button"
-               href="https://github.com/salamatsaheed-ux/breast-cancer-classification">
-                View Project
-            </a>
-        </div>
 
-        <div class="project">
-            <h3>Iris Flower Prediction</h3>
             <p>
-                A classification project that predicts Iris flower
-                species from their measurements using machine learning.
+                My background in Agronomy shaped my attention to detail,
+                analytical thinking, and problem-solving approach.
+                These qualities drew me to data and AI, where I explore
+                how patterns, evidence, and insights can lead to better
+                decisions and practical solutions.
             </p>
-            <a class="button"
-               href="https://github.com/salamatsaheed-ux?tab=repositories">
-                Find Project
-            </a>
-        </div>
-    </section>
 
-    <section id="contact">
-        <h2>Let's Connect</h2>
-        <p>I'm open to learning opportunities and meaningful collaborations.</p>
-        <p>
-            <a href="https://github.com/salamatsaheed-ux">
-                GitHub
-            </a>
-            |
-            <a href="https://www.linkedin.com/">
-                LinkedIn
-            </a>
-        </p>
-    </section>
+            <p>
+                During my service year, data-driven fertilisation
+                practices helped reduce chemical input costs by 12%,
+                strengthening my interest in using technology to solve
+                real-world problems.
+            </p>
+
+            <p>
+                I’m a Women in AI Fellow (2026), developing my skills in
+                data analysis and machine learning through hands-on
+                projects. I’m particularly interested in AI for
+                agriculture and social impact, with a goal of turning
+                data into meaningful solutions that make a difference.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>Scikit-learn</li>
+                <li>PyTorch</li>
+                <li>Data Analysis and Visualisation</li>
+                <li>Machine Learning Model Evaluation</li>
+                <li>Data Preprocessing and Feature Engineering</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+
+            <p>
+                These projects demonstrate my developing skills in
+                classification, regression, model evaluation, and
+                applying machine learning to different datasets.
+            </p>
+
+            <div class="project">
+                <h3>Iris Flower Classification</h3>
+
+                <p>
+                    A supervised machine learning project that uses
+                    Logistic Regression and scikit-learn to classify
+                    Iris flowers into three species based on sepal and
+                    petal measurements. The project includes model
+                    evaluation and a prediction function.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://github.com/salamatsaheed-ux/iris-flower-classification"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>California House Price Prediction</h3>
+
+                <p>
+                    A regression project that predicts median house
+                    values in California. It compares a Linear
+                    Regression baseline with a tuned Random Forest
+                    model, using scikit-learn and GridSearchCV to
+                    evaluate model performance.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://github.com/salamatsaheed-ux/california-house-price-prediction"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Titanic Survival Classification</h3>
+
+                <p>
+                    A classification project that explores whether
+                    Titanic passengers survived. It focuses on
+                    machine learning model training, hyperparameter
+                    tuning, overfitting, and performance evaluation
+                    using scikit-learn.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://github.com/salamatsaheed-ux/Titanic-Survival-Classification"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Project
+                </a>
+            </div>
+
+            <div class="project">
+                <h3>Breast Cancer Classification</h3>
+
+                <p>
+                    A machine learning classification project that
+                    applies multiple classification algorithms to
+                    predict breast cancer cases. It explores how
+                    classification models can distinguish between
+                    benign and malignant cases using data.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://github.com/salamatsaheed-ux/breast-cancer-classification"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    View Project
+                </a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Let's Connect</h2>
+
+            <p>
+                I'm open to learning opportunities, entry-level
+                opportunities, and meaningful collaborations in AI,
+                machine learning, and data analysis.
+            </p>
+
+            <p>
+                <a
+                    href="https://github.com/salamatsaheed-ux"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    GitHub Profile
+                </a>
+                &nbsp; | &nbsp;
+                <a
+                    href="https://www.linkedin.com/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+            </p>
+        </section>
+
+    </main>
 
     <footer>
-        <p>&copy; 2026 Salamah Saheed. Built with curiosity and consistency.</p>
+        <p>
+            &copy; 2026 Salamat Saheed Togun.
+            Built with curiosity and consistency.
+        </p>
     </footer>
 
 </body>
